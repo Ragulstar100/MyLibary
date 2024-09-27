@@ -71,7 +71,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.manway"
                 artifactId = "mylibrary"
-                version = "1.0.0" // Replace with your library version
+                version = "1.0.1" // Replace with your library version
             }
         }
     }
