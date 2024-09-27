@@ -47,6 +47,7 @@ class MainActivity : ComponentActivity() {
                     dateState.dateChangeListener {
                         Log.e("Update3",it.toString())
                     }
+
                 }
             }
         }
