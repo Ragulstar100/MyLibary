@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    //jttback libray
+    //JitPack library
     id("maven-publish")
 }
 
@@ -11,8 +11,6 @@ android {
 
     defaultConfig {
         minSdk = 24
-
-
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -42,6 +40,8 @@ android {
     }
 }
 
+
+
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -59,20 +59,19 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation("androidx.core:core-ktx:1.9.0")
 }
 
 //jitback libary(Maven Local Publish Script)
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("release") {
-
-                from(components["release"])
-                groupId = "com.manway"
-                artifactId = "mylibrary"
-                version = "1.0.0" // Replace with your library version
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            create<MavenPublication>("release") {
+//
+//                from(components["release"])
+//                groupId = "com.manway"
+//                artifactId = "mylibrary"
+//                version = "1.0.1" // Replace with your library version
+//            }
+//        }
+//    }
+//}
