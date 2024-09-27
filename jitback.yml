@@ -5,4 +5,4 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
   - FILE="-Dfile=mylibrary-release.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.Ragulstar100 -DartifactId=MyLibary -Dversion=1.0.1 -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.Ragulstar100 -DartifactId=MyLibary -Dversion=1.0.2 -Dpackaging=aar -DgeneratePom=true
